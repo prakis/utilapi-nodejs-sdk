@@ -1,0 +1,47 @@
+{
+  "name": "utilapi",
+  "version": "1.0.0",
+  "description": "Official Node.js SDK for UtilAPI — free stateless utility API at api.utilapi.com",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "utilapi",
+    "utility",
+    "api",
+    "base64",
+    "hash",
+    "uuid",
+    "encoding"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utilapi/utilapi-nodejs-sdk"
+  },
+  "homepage": "https://utilapi.com/sdk",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.1"
+  }
+}
