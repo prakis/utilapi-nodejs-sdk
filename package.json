@@ -1,6 +1,6 @@
 {
   "name": "utilapi",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Official Node.js SDK for UtilAPI — free stateless utility API at api.utilapi.com",
   "type": "module",
   "main": "./dist/index.js",
