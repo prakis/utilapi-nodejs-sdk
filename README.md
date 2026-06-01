@@ -93,6 +93,32 @@ try {
 
 - Node.js 18+ (uses native `fetch`)
 
+## Test the installed package
+
+From any folder (or use the example in this repo):
+
+```bash
+mkdir utilapi-test && cd utilapi-test
+npm init -y
+npm install utilapi
+```
+
+Create `smoke-test.mjs` (or copy from `examples/smoke-test.mjs` in this repo), then:
+
+```bash
+node smoke-test.mjs
+```
+
+Or from this repo:
+
+```bash
+cd examples
+npm install
+node smoke-test.mjs
+```
+
+Optional: point at a local API with `UTILAPI_BASE_URL=http://localhost:3000 node smoke-test.mjs`.
+
 ## License
 
 MIT
